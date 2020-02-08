@@ -4,53 +4,116 @@
     <meta charset="UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
+<style>
+    body {
+          background-color: #d47b8e;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23ffffff' stroke-width='0' %3E%3Crect fill='%23c4c4c4' x='-60' y='-60' width='86' height='240'/%3E%3C/g%3E%3C/svg%3E");
+      }
+    nav.navbar.navbar-light.bg-info {
+        padding:0;
+        position: relative;
+        min-width: 476px;
+        border-bottom: solid 3px white;
+        background-color: grey;
+    }
+    a.bg-secondary.text-white {
+          margin-right: 15px;
+    }
+    .bg-secondary.text-white {
+        width: 220px;
+        min-height: 60px;
+        font-size: 24px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 20px;
+        text-align: center;
+    }
+    a.nav-item.nav-link {
+        color: #ffffff;
+        margin: 0px;
+        padding: 5px;
+    }
+    div.col-sm-9 {
+        margin: 20px 40px 15px 20px;
+        border: solid 3px white;
+        background-color: grey;
+        color: white;
+    }
+    div.row {
+        border-bottom: 1px solid white;margin-right: 20px; margin-left: 20px;
+    }
+    h2{
+        font-size: 24px;    
+        margin: 20px 0px 20px 0px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    input#formGroupExampleInput3.form-control {
+        min-height: 50%;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color:white;
+        border-top: teal solid 5px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+    }
+</style>
     
 </head>
 <body>
-    <span class="border-bottom"> 
-    <nav class="navbar fixed-top navbar-light bg-light"></span>
-        <div id="nameBrand">    
-            <h1>Lindsey Lowther</h1>
-        </div>
-        <nav>
-            <div class="d-print-inline">
-                <ul>
-                    <li><a href="index.html">Home</a></li> 
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        </nav>
+    <nav class="navbar navbar-light bg-info">
+        <a class="bg-secondary text-white">Lindsey Lowther</a></a>
+    <form class="form-inline">
+        <a class="nav-item nav-link" href="index.html">About</a>
+        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+    </form>
+  </nav>
        
         
-        <div class="container">
-            <span class="border">
-            <div class="row">
-                <div class="col-sm-8">
-                    <img src="assets/images/profile.jpg" style="width: 200px; height: 200px;">
+  <div class="container.sm">
 
-                        <p> Originally from California, I moved to Austin in the summer of 2012 to persue a more fulfilling life.
-                        I've been a cosmetologist for the last 10 years, and I have absolutely loved it, but I always knew there 
-                        was something I would rather be doing instead.
-                        I went down many career options but landed at a dead end realizing that those things would also have an expiration date on
-                        happiness. One thing above everything always stood out though. Software developement, and website design. I loved learning different languages.
-                        and it was the one thing that always made my brain happy.</p>
+    <div class="col-sm-9">
+      <div class="clearfix">
+          <div class="row">
+              <h2>Contact:</h2>
+          </div>
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <label for="email">Name:</label>
+                <input type="name" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+              <br>
+              <input class="btn btn-light" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        </div>
+        </div>
         
-                        <p>I hope that with my new knowledge from The Coding Bootcamp at UT, I can successfly get a job that I can learn more from,
-                        and also add my skills to a company that would value me as an employee. I also would love to help small business owners grow
-                        their business by building a fully functional website. Helping small businesses would be very fullfulling, because
-                        the one thing I can take away from my years as a cosmetologist is I love to help people. I love to see people succeed, and when 
-                        you have confidence, so many things are possible. Having confidence in a good website for potentional clients, is something 
-                        every business should have. </p>
-                </div>
+
+        <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                Copyright 2020 &copy;
             </span>
         </div>
-        </div>
-        </div>    
+        </footer>
+            
        
     
 </body>

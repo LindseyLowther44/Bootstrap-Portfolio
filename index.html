@@ -7,9 +7,77 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.css">
-    <title>Hello, world!</title>
     
+    <title>Hello, world!</title>
+    <style>
+      body {
+          background-color: #d47b8e;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23ffffff' stroke-width='0' %3E%3Crect fill='%23c4c4c4' x='-60' y='-60' width='86' height='240'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      nav.navbar.navbar-light.bg-info {
+          padding:0;
+          position: relative;
+          min-width: 476px;
+          border-bottom: solid 3px white;
+          background-color: grey;
+      }
+      a.bg-secondary.text-white {
+          margin-right: 15px;
+      }
+      .bg-secondary.text-white {
+          width: 220px;
+          min-height: 60px;
+          font-size: 24px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          margin-left: 20px;
+          text-align: center;
+      }
+
+      a.nav-item.nav-link {
+          color: #ffffff;
+          margin: 0px;
+          padding: 5px;
+      }
+      div.m-5.pb-5 {
+          max-width: 960px;
+
+      }
+      div.col-sm-9 {
+          margin: 20px 40px 15px 20px;
+          border: solid 3px white;
+          background-color: grey;
+          color: white;
+        
+      }
+      div.row {
+          border-bottom: 1px solid white;margin-right: 20px; margin-left: 20px;
+      }
+      h2{
+          font-size: 24px;    
+          margin: 20px 0px 20px 0px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      img {
+          float: left;
+          margin: 25px 20px 25px 0  ;
+      }
+      p {
+          margin: 20px 0 20px 0;   
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color:white;
+        border-top: teal solid 5px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+    }
+      
+</style>
   </head>
   <body>
     <nav class="navbar navbar-light bg-info">
@@ -17,7 +85,7 @@
         <form class="form-inline">
             <a class="nav-item nav-link" href="index.html">About</a>
             <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="contact.html">contact</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
         </form>
       </nav>
       <div class="container.sm">
@@ -27,10 +95,9 @@
                         <div class="row">
                             <h2>About Me:</h2>
                         </div>
-                        <span class="float-left">
-                        <img src="images/84210217_10214341269877186_605579239000899584_n.jpg" style="width:200px; height: 250px;">
-                    </span>
-                    
+      
+                            <img src="images/84210217_10214341269877186_605579239000899584_n.jpg" class="img-fluid" style="max-width: 33%;" alt="Responsive image">
+                  
                             <p> Originally from California, I moved to Austin in the summer of 2012 to pursue a more fulfilling life.
                             I've been a cosmetologist for the last 10 years, and I have absolutely loved it, but I always knew there 
                             was something I would rather be doing instead.
@@ -51,13 +118,15 @@
         </div>
       </div>
 
-    <div class="footer">
+      <footer class="footer">
         <div class="container">
             <span class="text-muted">
-                Copyright &copy;
+                Copyright 2020 &copy;
             </span>
         </div>
-    </div>
+        </footer>
+      
+      
         
 
 
